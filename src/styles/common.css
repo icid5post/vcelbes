@@ -1,0 +1,57 @@
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 100px;
+    animation: colorchange 2s linear 2s infinite alternate;
+    z-index: 1;
+}
+#bg{
+    filter: blur(65px);
+}
+
+.trail:first-of-type {
+   // background:white!important;
+    z-index: 1;
+}
+
+@keyframes colorchange
+{
+    0% {background: red;}
+    17% {background: #E73323;}
+    33% {background: #E73323;}
+    50% {background: #FFB30F;}
+    67% {background: #FE675D;}
+    83% {background: #e6f542;}
+    100% {background: #FFCB48;}
+}
+
+
+.title-anim{
+    opacity: 0;
+    transform: translateY(100%) rotateX(-80deg);
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1);
+}
+
+
+
+html.is-ready .title-anim{
+    opacity: 1;
+    transform: none;
+    transition-duration: .8s;
+    transition-delay: .1s;
+}
+
+html.is-ready .title-anim.sub{
+    transition-delay: .5s;
+}
+
+.section-bg{
+    background-color: #0e0e0e;
+}
+
+section{
+    min-height: 600px;
+}
