@@ -76,5 +76,17 @@
 })();
 
 (function (){
+    const swiper = new Swiper('.swiper', {
 
+        loop: true,
+        //direction: "vertical",
+        grabCursor: true,
+        speed: 1000,
+        // paginationClickable: true,
+        parallax: true,
+        autoplay: false,
+        effect: "slide",
+        mousewheel: true,
+        mousewheelControl: 1
+    });
 })();

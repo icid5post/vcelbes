@@ -55,3 +55,21 @@ html.is-ready .title-anim.sub{
 section{
     min-height: 600px;
 }
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
+}
+
+.swiper-image-inner{
+    background-color: hsla(0, 0%, 0%, 0.2);
+    background-blend-mode: overlay;
+}

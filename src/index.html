@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../dist/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
     <link href="./styles/libs/locomotive-scroll.min.css" rel="stylesheet">
     <link href="./styles/common.css" rel="stylesheet">
     <title>Document</title>
@@ -49,7 +48,7 @@
                     <div class="overflow-hidden" data-scroll>
                         <h1 class="flex items-center text-[78px] title-anim">
                             <div class="w-16">
-                                <image src="./images/logov.svg" alt="logo" class="w-full block"/>
+                                <img src="./images/logov.svg" alt="logo" class="w-full block"/>
                             </div>
                             CELEBS
                         </h1>
@@ -165,7 +164,7 @@
                 <div class="container mx-auto py-5 h-full"  data-scroll data-scroll-speed="1">
 
                     <div class="grid grid-cols-12 items-end mb-28">
-                        <div class="col-span-3 text-3xl uppercase"  data-scroll data-scroll-speed="-1">
+                        <div class="col-span-3 text-3xl uppercase"  data-scroll>
                             about us
                         </div>
                     </div>
@@ -174,7 +173,7 @@
                         <div class="overflow-hidden border-l border-white pl-20 mb-20" data-scroll>
                             <h1 class="flex items-center text-[78px] title-anim">
                                 <div class="w-16">
-                                    <image src="./images/logov.svg" alt="logo" class="w-full block"/>
+                                    <img src="./images/logov.svg" alt="logo" class="w-full block" />
                                 </div>
                                 CELEBS
                             </h1>
@@ -231,7 +230,7 @@
 
                         <div class="col-span-5" >
                             <div class="mb-10 relative" data-scroll data-scroll-speed="3">
-                                <image src="./images/sectImage.jpg" class="w-[500px] h-auto"></image>
+                                <img src="./images/sectImage.jpg" class="w-[500px] h-auto" />
 
                                 <a href="#" class="absolute text-lg -bottom-24 p-5 -right-1 w-[220px] h-[220px] p-5 flex items-center justify-center rounded-full border border-white group cursor-pointer hover:bg-yellow-200 hover:border-yellow-200 hover:text-black transition">
                                     <span class="group-hover:hidden">
@@ -262,9 +261,8 @@
                 <div class="container mx-auto py-5 h-full relative"  data-scroll data-scroll-speed="1">
 
                     <div class="grid grid-cols-12 items-end mb-28">
-                        <div class="col-span-3 text-3xl uppercase"  data-scroll data-scroll-speed="-1">
+                        <div class="col-span-3 text-3xl uppercase"  data-scroll>
                             FOUNDERS
-
                         </div>
                     </div>
 
@@ -274,7 +272,7 @@
                             <div class="border border-white rounded-lg p-5 h-full">
                                 <div class="flex items-center uppercase mb-5">
                                     <div class="shrink-0 mr-2">
-                                        <image src="./images/av1.png" alt=""></image>
+                                        <img src="./images/av1.png" alt="" />
                                     </div>
                                     <div class="flex items-center">
                                         alexander golovachev
@@ -293,7 +291,7 @@
                             <div class="border border-white rounded-lg p-5 h-full">
                                 <div class="flex items-center uppercase mb-5">
                                     <div class="shrink-0 mr-2">
-                                        <image src="./images/av2.png" alt=""></image>
+                                        <img src="./images/av2.png" alt="" />
                                     </div>
                                     <div class="flex items-center">
                                         DANIL KHALILOV
@@ -310,7 +308,7 @@
 
                     </div>
 
-                    <div class="flex justify-end ml-auto mr-[400px] mt-20 mb-20" data-scroll data-scroll-speed="2" data-scroll-position="bottom">
+                    <div class="flex justify-end ml-auto mr-[400px] mt-20 mb-20" data-scroll data-scroll-speed="1" data-scroll-position="bottom">
                         <div class="transition hover:translate-y-[20px] cursor-pointer">
                             <svg width="20" height="100" viewBox="0 0 8 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.64645 57.5724C3.84171 57.7677 4.15829 57.7677 4.35355 57.5724L7.53553 54.3905C7.7308 54.1952 7.7308 53.8786 7.53553 53.6833C7.34027 53.4881 7.02369 53.4881 6.82843 53.6833L4 56.5118L1.17157 53.6833C0.976311 53.4881 0.659728 53.4881 0.464466 53.6833C0.269204 53.8786 0.269204 54.1952 0.464466 54.3905L3.64645 57.5724ZM3.5 0L3.5 57.2189H4.5L4.5 0L3.5 0Z" fill="white"/>
@@ -325,26 +323,116 @@
             <section class="w-full flex py-20 relative z-30"
                      data-scroll-section
                      data-scroll-call="default"
-                     data-scroll
-                     id="fixed-elements"
-
             >
 
-                <div class="container mx-auto py-5 h-full relative"  data-scroll data-scroll-speed="1">
+                <div class="container mx-auto py-5 h-full relative" >
 
-                    <div class="grid grid-cols-12 items-end mb-28" data-scroll data-scroll-speed="-1" data-scroll-sticky data-scroll-target="#fixed-elements">
-                        <div class="col-span-3 text-3xl uppercase"  data-scroll-to >
+
+                    <div class="grid grid-cols-12  mb-28">
+                        <div class="col-span-3 text-3xl uppercase">
                             featured projects
                         </div>
                     </div>
 
 
-                    <div class="grid grid-cols-12 gap-10">
+                    <div class="grid grid-cols-12 gap-10"  id="fixed-section-1">
                         <div class="col-span-6">
+                            <div class="text-4xl uppercase"  data-scroll data-scroll-sticky data-scroll-target="#fixed-section-1">
+                                3D & MOTION <br>
+                                DESIGN EXPERTISE
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <div class="overflow-hidden h-[600px]">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide" >
+                                            <div class="swiper-image-inner">
+                                                <div  data-swiper-parallax-y="-20%">
+                                                    <img src="images/slide2.jpg"  alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" >
+                                            <div class="swiper-image-inner">
+                                                <div  data-swiper-parallax-y="-20%">
+                                                    <img src="images/slide1.png" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
-                        <div class="col-span-6" data-scroll>
-                            <div id='root'></div>
+                    </div>
+
+
+                    <div class="grid grid-cols-12 gap-10"  id="fixed-section-2">
+                        <div class="col-span-6">
+                            <div class="text-4xl uppercase"  data-scroll data-scroll-sticky data-scroll-target="#fixed-section-2">
+                                nft collections
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <div class="overflow-hidden h-[600px]">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide" >
+                                            <div class="swiper-image-inner">
+                                                <div  data-swiper-parallax-y="-20%">
+                                                    <img src="images/slide1.png" alt=""/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide" >
+                                            <div class="swiper-image-inner">
+                                                <div  data-swiper-parallax-y="-20%">
+                                                    <img src="images/slide2.jpg"  alt=""/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12 gap-10"  id="fixed-section-3">
+                        <div class="col-span-6">
+                            <div class="text-4xl uppercase"  data-scroll data-scroll-sticky data-scroll-target="#fixed-section-3">
+                                jewelry & clo
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <div class="overflow-hidden h-[600px]">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide" >
+                                            <div class="swiper-image-inner">
+                                                <div  data-swiper-parallax-y="-20%">
+                                                    <img src="images/slide1.png"  alt=""/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide" >
+                                            <div class="swiper-image-inner">
+                                                <div  data-swiper-parallax-y="-20%">
+                                                    <img src="images/slide2.jpg"  alt=""/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -352,6 +440,7 @@
                 </div>
 
             </section>
+
 
             <section class=" w-full flex py-20 relative z-30"
                      data-scroll-section
@@ -361,25 +450,102 @@
 
                 <div class="container mx-auto py-5 h-full relative"  data-scroll data-scroll-speed="1">
 
-                    <div class="grid grid-cols-12 items-end mb-28" data-scroll data-scroll-speed="-1">
-                        <div class="col-span-3 text-3xl uppercase"  data-scroll-to >
-                            featured projects
+                    <div class="grid grid-cols-12 items-end mb-28">
+                        <div class="col-span-3 text-3xl uppercase"  data-scroll>
+                            OUR PARTNERS
                         </div>
                     </div>
 
+                    <div class="max-w-7xl w-full mx-auto">
+                        <div class="grid grid-cols-12 gap-10">
+                            <div class="col-span-6">
+                                <div class="flex justify-center mb-15">
+                                    <img src="./images/partner1.png" alt="">
+                                </div>
 
-                    <div class="grid grid-cols-12 gap-10">
-                        <div class="col-span-6">
-
+                            </div>
+                            <div class="col-span-6">
+                                <div class="flex justify-center mb-15">
+                                    <img src="./images/partner2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-span-6">
+                                <div class="flex justify-center mb-15">
+                                    <img src="./images/partner3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-span-6">
+                                <div class="flex justify-center mb-15">
+                                    <img src="./images/partner4.png" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-span-6" data-scroll>
-                            <div class="item cb-featured-item-img"  aria-label="FlipaClip">
-                                <image src="./images/slide2.png"></image>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <section class="w-full flex relative z-30 relative"
+                     data-scroll-section
+                     data-scroll-call="default"
+                     data-scroll
+            >
+                <div class="container mx-auto px-3 relative pb-[300px]">
+
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-4">
+                            <div class="mb-32">
+                                <h2 class="text-6xl uppercase mb-10">contact us</h2>
+                                <p class="uppercase leading-7">
+                                    We have a team of experienced blockchain developers and crypto experts. Do you have an NFT project in mind? We can help you make it happen.
+                                </p>
                             </div>
                         </div>
                     </div>
 
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-6"></div>
+                        <div class="col-span-6">
+                            <form action="#">
+                                <div class="border-t pt-5 border-white text-3xl mb-3">
+                                    <input type="text"  id="name" class="block bg-transparent w-full outline-none text-white placeholder:text-white" placeholder="FULL NAME"/>
+                                </div>
+                                <div class="border-t pt-5 border-white text-3xl mb-3">
+                                    <input type="text"  id="enail" class="block bg-transparent w-full outline-none text-white placeholder:text-white" placeholder="EMAIL"/>
+                                </div>
+                                <div class="border-t border-b pt-5 pb-5 border-white text-3xl mb-3">
+                                    <textarea type="text" id="offer" class="block bg-transparent w-full outline-none text-white placeholder:text-white h-10" placeholder="OFFER"></textarea>
+                                </div>
+                                <div class="flex items-center mt-10 justify-between">
+                                    <p class="text-2xl leading-7">
+                                        LEAVE A REQUEST AND WE <br>
+                                        WILL CONTACT YOU SOON
+                                    </p>
+                                    <div class="mx-3">
+                                        <svg width="100" height="30" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M55.7071 8.70711C56.0976 8.31658 56.0976 7.68342 55.7071 7.29289L49.3431 0.928932C48.9526 0.538408 48.3195 0.538408 47.9289 0.928932C47.5384 1.31946 47.5384 1.95262 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM0 9H55V7H0V9Z" fill="white"/>
+                                        </svg>
+                                    </div>
+
+                                    <button class="px-10 py-3 border border-white uppercase transition hover:bg-white hover:text-black">
+                                        send
+                                    </button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-0 -left-[100px] w-[500px]">
+                        <img src="./images/slide2.jpg" alt="">
+                    </div>
+
                 </div>
+
 
             </section>
 
@@ -388,8 +554,11 @@
 
     </div>
 
+
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/libs.js"></script>
     <script src="./js/common.js"></script>
 
